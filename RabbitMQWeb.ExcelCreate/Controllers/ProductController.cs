@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using RabbitMQWeb.ExcelCreate.Models;
 using RabbitMQWeb.ExcelCreate.Services;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 

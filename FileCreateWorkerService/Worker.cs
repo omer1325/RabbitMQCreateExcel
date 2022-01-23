@@ -88,7 +88,7 @@ namespace FileCreateWorkerService
 
         }
 
-        private DataTable GetTable(string tabelName)
+        private DataTable GetTable(string tableName)
         {
             List<Product> products;
 
@@ -99,7 +99,7 @@ namespace FileCreateWorkerService
                 products = context.Products.ToList();
             }
 
-            DataTable table = new DataTable { TableName = tabelName };
+            DataTable table = new DataTable { TableName = tableName };
             table.Columns.Add("ProductId", typeof(int));
             table.Columns.Add("Name", typeof(string));
             table.Columns.Add("ProductNumber", typeof(string));

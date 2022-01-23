@@ -39,7 +39,7 @@ namespace RabbitMQWeb.ExcelCreate.Controllers
             await file.CopyToAsync(stream);
 
             userFile.CreatedDate = DateTime.Now;
-            userFile.FileName = filePath;
+            userFile.FilePath = filePath;
             userFile.FileStatus = FileStatus.Completed;
 
             await _context.SaveChangesAsync();
